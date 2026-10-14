@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas, tabelas e formulários</title>
+</head>
+<body>
+    <!-- Listas -->
+    <!-- Não ordenada -->
+    <ul>
+        <li>A</li>
+        <li>B</li>
+    </ul>
+
+    <!-- Sequências com ordem definida -->
+    <ol>
+        <li>A</li>
+        <li>B</li>
+    </ol>
+
+    <!-- Glossário -->
+    <dl>
+        <dt>Termo definido</dt>
+        <dd>Descrição do termo</dd>
+    </dl>
+
+    <!-- Componentes interativos -->
+    <details>
+        <summary>O que é</summary>
+        <p>Só aparece quando interage</p>
+    </details>
+
+    <!-- Tabelas (apenas para dados tabulares) -->
+    <table>
+        <caption>Legenda ou descrição</caption>
+        <thead>
+            <tr>
+                <th scope="col">Cabeçalho</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Corpo da tabela</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Rodapé da tabela</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!--Formularios-->
+    <form action="/servidor" method="get">
+        <fieldset>
+            <legend>Login</legend>
+
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required placeholder="seu@email.com">
+            </p>
+
+            <p>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required>
+            </p>
+
+            <button type="submit">Entrar</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
