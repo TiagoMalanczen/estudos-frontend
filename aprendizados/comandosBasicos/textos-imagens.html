@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML-CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Block level -->
+    <div>
+        <p>Ocupa 100% da linha</p>
+        <a href="https://github.com/TiagoMalanczen/estudos-frontend">Link</a>
+    </div>
+
+    <!-- Inline level -->
+    <span>Ocupa apenas o espaço do conteúdo <a href="#">link</a></span>
+
+    <!-- Elementos de textos e links -->
+    <h1>Texto por hierarquia</h1>
+    <p>Parágrafos de texto corrido</p>  
+    <span>Sem significado semântico próprio</span><br>
+
+    <strong>Alta importância semântica</strong><br>
+    <b>Negrito estático</b><br>
+
+    <em>Indica ênfase ou alteração de tom na frase</em><br>
+    <i>Aplica itálico estilístico</i><br>
+
+    <a href="https://utfpr.edu.br" target="_blank">Força a abertura da página em outra aba</a><br>
+
+    <!-- Elementos de imagens -->
+    <img src="imagem.jpg" alt="Descrição textual" loading="lazy" fetchpriority="high">
+
+    <!-- Imagem Responsiva (<picture>) -->
+    <picture>
+        <source srcset="grande.jpg" media="(min-width: 1000px)">
+        <source srcset="media.jpg" media="(min-width: 600px)">
+        <img src="padrao.jpg" alt="Imagem responsiva">
+    </picture>
+
+    <!-- Figura com Legenda -->
+    <figure>
+        <img src="imagem.jpg" alt="Descrição textual" loading="lazy" fetchpriority="high">
+        <figcaption>Legenda direta para o conteúdo dentro do figure</figcaption>
+    </figure>
+
+    <!-- Gráfico SVG Vetorial -->
+    <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+
+    <!-- Tipos de atributos -->
+    <!-- Atributos universais -->
+    <div id="a">Entidade única pelo id</div>
+    <p id="b"></p>
+
+    <!-- Booleanos -->
+    <p>
+        <input type="text" disabled>
+        <span>Sua presença desativa o comportamento</span>
+    </p>
+    
+    <!-- De evento -->
+    <button onclick="clicar()">Executam funções quando o usuário interage com eles</button>
+
+    
+</body>
+</html>
