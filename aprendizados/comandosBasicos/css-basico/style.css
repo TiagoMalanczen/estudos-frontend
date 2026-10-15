@@ -1,0 +1,84 @@
+/*Seletor elemento*/
+body{
+    /*Declaracao*/
+    background-color: orange;
+}
+/*Seletor Id, Deve ser único na pagina*/
+#aaa{
+    background-color: black;
+}
+
+/*Aninhamento*/
+ul li a{
+    background-color: aqua;
+}
+
+ /*Agrupamento */
+ section div, article div{
+    color: blue;
+ }
+
+ 
+/*Combinadores*/
+/*Seleciona todos os descendentes p em qualquer nivel*/
+div p{
+    color: blueviolet;
+}
+/*Seleciona apenas os p que forem filhos diretos (primeiro nível)*/
+div > p{
+    color: cornflowerblue;
+}
+/*Seleciona o primeiro  p que estiver imediatamente apos o div no mesmo nível*/
+div + p{
+    color: blue;
+}
+/*Seleciona todos os irmãos p que vierem depois da div no mesmo nível*/
+div ~p{
+    color: darkgoldenrod;
+}
+
+/*Seletor de atributos (filtrar tags baseando-se no atributos)
+E[x]: O atributo x existe.
+E[x = "val"]: O valor de x é exatamente "val".
+E[x ^= "val"]: O valor do atributo começa com "val".
+E[x $= "val"]: O valor do atributo termina com "val".
+E[x *= "val"]: O valor contém "val" em qualquer posição.   
+*/
+
+/*Pseudoclasse*/
+article:hover{
+    background-color: blue;
+}
+article:first-child{
+    background-color: yellow;
+}
+article:last-child{
+    background-color: brown;
+}
+article:only-child{
+    background-color: black;
+}
+article:nth-child(2){
+    background-color: red;  /*Considera todos os filhos */
+}
+article:nth-of-type(3){
+    background-color: blue;/*Considera apenas o filho especificado*/
+}
+section :is(article, span){
+    background-color: green; /*Maior especifidade interna*/
+}
+section :where(article, span){
+    background-color: green; /*especifidade sempre igual a zero*/
+}
+section:has(span){
+    background-color: blanchedalmond; /*Seleciona o elemnto pai*/
+}
+section:not(span){
+    background-color: blanchedalmond; /*Nega a selecao*/
+}
+
+/*Before e after*/
+span::before{
+    content: "Teste";
+}
+
