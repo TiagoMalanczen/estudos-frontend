@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color: #0000ff;
+
+  background-color: beige;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  background-attachment: fixed; 
+  height: 1600px;
+}
+
+.caixa-padrao {
+  width: 300px;
+  height: 150px;
+  border: 3px solid #ccc;
+  padding: 20px 50px;
+  margin-top: 100px;
+}
+
+.exemplos-shorthand {
+  margin: 10px;
+  padding: 10px 20px;
+  margin: 10px 20px 30px;
+  padding: 10px 20px 30px 40px;
+}
+
+.caixa-content-box {
+  box-sizing: content-box;
+  width: 200px;
+  padding: 10px;
+  border: 5px solid black;
+}
+
+.caixa-border-box {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 10px;
+  border: 5px solid black;
+}
+
+div {
+  display: inline;
+}
+
+a {
+  display: block;
+}
+
+span {
+  display: inline-block;
+}
+
+.elemento-oculto-sem-espaco {
+  display: none;
+}
+
+.elemento-invisivel-com-espaco {
+  visibility: hidden;
+}
